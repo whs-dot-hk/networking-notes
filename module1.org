@@ -1,0 +1,91 @@
+* TCP/IP five-layer network model
+** Physical layer
+Cables, connectors
+** Data link layer
+Ethernet
+** Network layer
+IP - internet protocl, routers
+** Transport layer
+TCP - transmission control protocol, UDP - user datagram protocol
+** Application layer
+* Cables
+** Copper
+Votage
+Cat5, cat5e, cat6
+** Fiber optic cables
+Light
+** Crosstalk
+* Hub and switches
+** Hub
+Collision domain
+Layer 1 device
+** Network switch
+Layer 2 device
+** LAN - local area network
+* Routers
+** Layer 3 device
+** Routing tables
+** ISP core routers
+** BGP - border gateway protocol
+* Servers and clients
+* Physical layer
+** Bit
+1s and 0s
+** Modulation
+Line coding
+* Twisted pair cabling and duplexing
+** Twisted pair cables
+** Duplex communication
+** Simplex communication
+** Full-duplex
+** Half-duplex
+* Ethernet cables
+Four pairs of color-coded copper wires
+Each colored pair, one solid and one striped, are twisted together
+** UTP - unshielded twisted pair
+** STP - shielded twisted pair
+** FTP - foiled twisted pair
+** Straight-through cable
+** Crossover cable
+* Network ports and patch panels
+** RJ45 plug - registered jack 45
+Link led
+Activity led
+** Patch panel
+* Cabling tools
+** Crimper
+** Wi-fi analyzer
+** Toner probe
+** Punch down tool
+** Loopback plug
+** Network tap
+** Cable stripper
+** Cable tester
+* Ethernet and MAC address
+** Ethernet
+Carrier sense multiple access with collision domain (CSMA/CD)
+** MAC address - media access control address
+48 bits
+6 groupings of two hexadecimal numbers
+** Octets
+8 bits
+Two hexadecimal digits
+OUI - organiaztionally unique identifier, first 3 octets
+* Unicast, multicast and broadcast
+** Least significant bit in the first octet
+0 is unicast
+1 is multicast
+** Broadcast address
+All Fs
+Address resolution protocol
+* Dissecting an ethernet frame
+** Data packet
+** Ethernet frame
+Preamble
+SFD - start frame delimiter
+Destination MAC address
+Source address
+VLAN header, Virtual LAN (VLAN)
+EtherType field
+Pyaload
+FSC - frame check sequence, cyclical redundancy check (CRC)
