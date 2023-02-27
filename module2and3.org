@@ -1,0 +1,157 @@
+* IPv4 address
+32 bits
+4 octets
+Dotted decimal notation
+IBM first octet 9
+DHCP - Dynamic host configuation protocol
+Dynamic IP address
+Static IP address
+* IPv4 datagram and encapsulation
+** IPv4 datagram header
+Version field
+Header length field
+Service type field, QOS
+Total length field
+Identification field
+Flag field, fragmentation
+Fragmentation offset field
+Time to live (TTL) field
+Protocol field
+Header checksum field
+Source IP address field
+Destination IP address field
+IP options field
+Padding field
+** Encapsulation
+* IPv4 address classes
+** Network ID
+** Host ID
+** Class A address
+First octet is network ID
+** Class B address
+First 2 octet
+** Class C address
+First 3 octet
+** Class A address
+0xxx
+** Class B address
+10xx
+** Class C address
+110x
+** Class D address
+1110
+** Class E address
+1111
+** CIDR
+* Address resolution protocol
+** ARP table
+IP datagram encapsulated inside ethernet frame, ethernet header destination MAC address
+Expire
+** Broadcast ARP message
+Sent to broadcast MAC address, all F's
+* Subnetting
+** Gateway router
+* Subnet mask
+** Subnet ID
+* Basic binary math
+** Base
+** Counting
+** AND OR
+* CIDR
+** Demarcation point
+** Classless inter-domain routing
+* Basic routing concepts
+** Router
+At least 2 network interfaces
+Receive data packet -> examines destination IP -> looks up IP destination network in routing table -> forwards traffic to destination
+* Routing tables
+** Destination network
+** Next hop
+** Total hops
+** Interface
+* Interior gateway protocols
+** Link state routing protocols
+** Distance-vector protocols
+** Autonomous system
+* External gateways, autonomous systems and the IANA
+** Edge router
+** Autonomous system number (ASN)
+** BGP
+* Non-routable address space
+** RFC 1918, request for comments
+** NAT - network address translation
+** 10.0.0.0/8
+** 172.16.0.0/12
+** 192.168.0.0/16
+* Transport layer
+** Multiplexing
+** Demultiplexing
+** Servers and clients
+HTTP port 80
+FTP port 21
+Socket address, socket number, socket port
+* TCP segment
+** Source port
+Ephemeral ports
+** Destination port
+** Sequence number
+** Acknowledgement number
+** Data offset field
+** Control flag
+** TCP window
+** TCP checksum
+** Ugent pointer field
+** Options field
+** Padding
+** Data payload
+* 6 TCP contol flags
+** URG (urgent)
+Urgent pointer field
+** ACK (acknowledged)
+Acknowledgement number field
+** PSH (push)
+Buffer
+** RST (reset)
+** SYN (synchronize)
+Sequence number field
+** FIN (finish)
+* Three-way handshake
+Initial sequence number
+SYN
+SYN/ACK
+ACK
+* Four-way handshake
+FIN
+ACK
+FIN
+ACK
+* TCP socket states
+Socket
+Instantiation
+LISTEN
+SYN_SENT
+SYN_RECRIVED
+ESTABLISHED
+FIN_WAIT
+CLOSE_WAIT
+CLOSED
+* Connection-oriented protocol
+ACK
+* Connectionless protocol
+UDP
+* Sockets
+* Ports
+System ports 1 - 1023
+User ports 1024 - 49151
+Ephemeral ports 49152 - 65535
+* Firewalls
+* Application layer
+HTTP
+FTP
+* OSI model
+Open systems interconnection
+7 layers
+** Session layer
+** Presentation layer
+* All the layers working in unison
+TTL field number 64
