@@ -1,0 +1,277 @@
+* Domain name system DNS
+** Domain name
+** Name resolution
+** Five primary types of DNS servers
+*** Caching name servers
+*** Recursive name servers
+*** Root name servers
+13
+*** TLD name servers
+*** Authoritative name servers
+** TTL
+** Anycast
+* DNS and UDP
+** TCP
+44 packets
+** UDP
+8 packets
+* Resource record type
+** A record
+DNS round robin
+** AAAA - Quard A
+** CNAME - canonical name
+** MX record - email exchange
+** SRV record - service record
+** TXT record - text
+** NA
+** SOA
+* Anatomy of a domain name
+** Top level domain (TLD)
+Varity TLDS
+** ICANN - The internet coporation for assigned names and numbers
+** Domain
+** Subdomain
+Host name
+** Fully gualified domain name (FQDN)
+127 levels
+65 characters for each sections
+Total 255 characters
+** Registrar
+* DNS zones
+** Zone files
+** Start of authority (SOA)
+** NS records
+** Reverse lookup zone files
+** Pointer resource record (PTR)
+* Dynamic host configuration protocol
+Application layer
+** IP address
+** Subnet mask
+** Gateway
+** Name server
+** Static IP
+** Dynamic allocation
+** Automatic allocation
+** Fixed allocation
+* DHCP discovery
+** DHCPDISCOVER
+Source: 0.0.0.0:68
+Destination: 255.255.255.255:67
+** DHCPOFFER
+Source: 192.168.1.1:67
+Destination: 255.255.255.255:68
+** DHCPREQUEST
+** DHCPACK
+** DHCP lease
+* Basic of NAT
+** Network address translation
+** IP masquerading
+** One-to-many NAT
+* NAT and the transport layer
+** Port preservation
+** Port forwarding
+* NAT, non-routable address space and the limits of IPv4
+** 5 regional internet registries
+AFRINIC
+ARIN
+APNIC
+LACNIC
+RIPE
+** Non-routable address space
+RFC1918
+* Virtual private networks (VPN)
+Tunneling protocol
+** VPN tunnel
+** Two-factor authentication
+** Site-to-site connectivity
+* Proxy services
+Anonymity
+Security
+Content filtering
+Increased performance
+** Proxy
+Web proxies
+Reverse proxies
+* Dial-up and modems
+** Public switched telephone network (PSTN)
+Plain old telephone service (POTS)
+** USENET
+** Dial-up connection
+** Modulator/demodulator
+Modem
+** Baud rate
+* T-carrier technologies
+** Transmission system 1 (T1)
+24 simultaneous phone calls
+64 kbps each channel
+1.544 mbps total
+T3, 28 T1s 44,738 mbps
+* Digital subscriber lines (DSL)
+** Digital subscriber line addess multiplexers (DSLAMs)
+** ADSL
+Asymmetic digital subscriber line
+** SDSL
+Symmetric
+** HDSL
+High bit-rate
+* Cable broadband
+** Cable communications policy act
+** Shared bandwidth technology
+** Central office (CO)
+DSL, dial-up
+** Cable modem
+** Cable modem termination system (CMTS)
+* Fiber connections
+** FTTX
+Fiber to the x
+** FTTN
+Neightborhood
+** FTTB
+Building
+** FTTH
+Home
+** FTTS
+Premises
+FTTH, FTTB
+** Optical network terminator (ONT)
+* Point to point protocol (PPP)
+Data link layer
+** Sub-protocols for PPP
+Network control protocol (NCP)
+Link control protocol (LCP)
+** Ponit to point over ethernet (PPPoE)
+* Wide area network (WAN)
+** Local loop
+* Point-to-point VPN
+Site-to-site VPN
+* Wireless networking
+** IEEE 802.11 standards
+802.11 family
+WiFi
+** Frequence band
+FM boradcast band, 88-108 MHz
+** 2.4 GHz 5 GHz
+802.11a
+802.11b
+802.11g
+802.11n
+802.11ac
+Physical and data-link layer
+** 802.11 frame
+Frame control field
+Duration field
+Source address field
+Interted destination field
+Recceiving address
+Sequence control
+Transmitter address
+Data payload
+Frame check sequence
+** Wireless access point
+* Wireless network configuration
+** Ad-hoc networks
+** Wireless LANS (WLANS)
+** Mesh networks
+** Wireless channels
+Channel
+Collision domain
+2.4 GHz - 2.5 Ghz
+* Wireless security
+** Wired Equivalent privacy (WEP)
+40 bits
+** Wifi proteced access (WPA)
+128 bits
+** WPA2
+256 bits
+** MAC filtering
+* Cellular network
+** Mobile networking
+** Cells
+* Troubleshooting
+** Error-detection
+** Error-recovery
+** ICMP - internet control message protocol
+** ICMP packet
+Type field
+Code field
+Checksum field
+Rest of header field
+** Ping
+Echo request message
+Echo reply
+** Traceroute
+TTL field
+Time exceeded
+TTL=1
+TTL=2
+TTL=3
+...
+** mtr
+** pathping
+** Testing port connectivity
+netcat - nc
+Test-NetConnection
+* Name resolution tools
+nslookup
+server 8.8.8.8
+set type=MX
+set debug
+* Public DNS servers
+** DNS as a service
+** Level 3 communication
+4.2.2.1 - 4.2.2.6
+** 8.8.8.8, 8.8.4.4
+** Ping
+* Registrar
+Network solutions inc
+* Hosts files
+** Loopback address
+127.0.0.1 localhost ::1 localhost
+* The cloud
+** Hardware virtualization
+** Hypervisor
+** Private cloud
+* Everything as a service
+** Infrastructure as a service (IaaS)
+** Platform as a service (PaaS)
+** Software as a service (SaaS)
+Gmail
+Office 365
+* Cloud storage
+* IPv6
+Internet protocol version 6
+128 bits
+Undecillion
+8 groups 16 bits 
+** Reserved
+2001:0db8
+** e.g. 2001:0db8:0000:0000:0000:ff00:0012:3456
+2001:db8:0:0:0:ff00:12:3456
+2001:db8::ff00:12:3456
+** Loopback address
+0000:0000:0000:0000:0000:0000:0000:0001
+::1
+** Multicast
+FF00::
+** Link-local unicast
+FE80::
+** Network ID
+First 64 bits
+** Host ID
+Second 64 bits
+* IPv6 header
+Version field
+Traffic class field
+Flow label field
+Payload length field
+Next header field
+Hop limit field
+Souce address
+Destination address
+** Data payload
+* IPv6 and IPv4 harmony
+** IPv4 mapped address space
+192.168.1.1 = 0:0:0:0:0:ffff:d1ad:35a7
+80 zeros followed by 16 ones
+** IPv6 tunnels
+** IPv6 tunnel broker
